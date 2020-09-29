@@ -7,7 +7,8 @@ description = "Crate for collecting an iterator of results into a result of a co
 repository="https://github.com/LFalch/collect_result"
 homepage="https://github.com/LFalch/collect_result"
 readme="README.md"
-keywords=["iterator extension"]
+keywords=["iterator_extension"]
+categories=["data-structures"]
 license="MIT"
 exclude= [
     ".gitignore",
