@@ -1,5 +1,7 @@
 #![warn(missing_docs, trivial_casts, trivial_numeric_casts)]
 //! Crate for collecting an iterator of results into a result of a collection
+//!
+//! Special thanks to [elyatai](https://github.com/elyatai) for the idea for this project.
 
 use std::iter::{
     FromIterator,
