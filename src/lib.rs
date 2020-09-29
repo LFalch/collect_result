@@ -26,7 +26,7 @@ impl<T, E, I: Iterator<Item=Result<T, E>>> CollectResult<T, E> for I {
     /// That is, it will immediately return the error when it encounters the first one.
     fn collect_result<O: FromIterator<T> + Extend<T>>(self) -> Result<O, E> {
         let (mut lower, mut upper) = self.size_hint();
-        let mut ret: O = SizeHintedIter::with_bounds(empty(), lower, upper).collect();
+        let mut ret: O = empty().collect();
 
         for element in self {
             let iter = SizeHintedIter::with_bounds(once(element?), lower, upper);
