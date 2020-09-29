@@ -1,6 +1,6 @@
 [package]
 name = "collect_result"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["LFalch <lucas@wasd.dk>"]
 edition = "2018"
 description = "Crate for collecting an iterator of results into a result of a collection"
